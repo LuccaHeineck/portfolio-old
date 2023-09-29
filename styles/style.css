@@ -126,7 +126,7 @@ body
     height: auto;
 }
 
-.container__content__links__link:hover
+.container__content__links__nav:hover
 {
     background-color: var(--hover-color);
 }

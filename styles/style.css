@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --primary-color: #2C3639;
+    --secondary-color: #DCD7C9;
+    --tertiary-color: #A27B5C;
+    --hover-color: #3F4E4F;
+
+    --main-font: 'Krona One', sans-serif;
+    --text-font: 'Montserrat', sans-serif;
+}
+
+body
+{
+    box-sizing: border-box;
+    /* height: 100vh; */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.header
+{
+    padding: 3% 0% 0% 15%;
+}
+
+.header__menu
+{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link
+{
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.header__menu__link:hover
+{
+    text-decoration: overline;
+}
+
+.title_highlight
+{
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.container
+{
+    gap: 82px;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__content
+{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.container__content__title
+{
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+}
+
+.container__content__text
+{
+    text-align: justify;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+}
+
+.container__content__links__subtitle
+{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container__content__links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}   
+
+.container__content__links__nav
+{
+    /* background-color: #5995ED; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 60%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--text-font);
+    font-weight: 600;
+    padding: 21.5px 0;
+    color: var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
+    text-decoration: none;
+}
+
+.container__content__links__link__img
+{
+    width: 35px;
+    height: auto;
+}
+
+.container__content__links__link:hover
+{
+    background-color: var(--hover-color);
+}
+
+.container__image
+{
+    width: 40%;
+    height: auto;
+    border-radius: 28px;
+}
+
+.footer
+{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px)
+{
+    .header
+    {
+        padding: 10%;
+    }
+
+    .header__menu
+    {
+        justify-content: center;
+    }
+
+    .container
+    {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__content
+    {
+        width: auto;        
+    }
+}
+
+
+
+
+
+
+
+
+/* https://icons8.com */
+/* #5995ED */
